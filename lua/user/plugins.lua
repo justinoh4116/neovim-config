@@ -103,6 +103,7 @@ return packer.startup(function(use)
 
     -- use "jiangmiao/auto-pairs"
     -- use 'goukiwi/vim-smartpairs'
+    use 'windwp/nvim-autopairs'
 
     use "kyazdani42/nvim-web-devicons"
 
