@@ -117,13 +117,15 @@ return packer.startup(function(use)
             }
         end
     }
-  
+
 
     use "lewis6991/gitsigns.nvim"
+    require('gitsigns').setup()
+
     use {
         "norcalli/nvim-colorizer.lua",
     }
-    use 'sunjon/Shade.nvim' 
+    use 'sunjon/Shade.nvim'
 
     use {
         'nvim-lualine/lualine.nvim',
