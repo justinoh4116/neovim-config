@@ -103,7 +103,10 @@ return packer.startup(function(use)
 
     -- use "jiangmiao/auto-pairs"
     -- use 'goukiwi/vim-smartpairs'
-    use 'windwp/nvim-autopairs'
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
 
     use "kyazdani42/nvim-web-devicons"
 
@@ -134,6 +137,8 @@ return packer.startup(function(use)
     }
 
     use 'mattn/emmet-vim'
+
+    use 'justinmk/vim-sneak'
 
 --     use 'kevinhwang91/promise-async'
 --     use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
