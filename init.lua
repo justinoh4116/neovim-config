@@ -7,6 +7,7 @@ require "user.indent_blankline"
 require "user.lualine"
 require 'user.lsp'
 require 'colorizer'.setup() 
+require 'user.treesitter'
 
 nvim_lsp.rust_analyzer.setup {
   settings = {
