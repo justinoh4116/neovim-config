@@ -105,7 +105,6 @@ return packer.startup(function(use)
     -- use 'goukiwi/vim-smartpairs'
     use {
         "windwp/nvim-autopairs",
-        config = function() require("nvim-autopairs").setup {} end
     }
 
     use "kyazdani42/nvim-web-devicons"
